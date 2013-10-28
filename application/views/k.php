@@ -4,6 +4,9 @@
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <title>k line painter</title>
+    <style type="text/css">
+   		pre{color: gray;font-size: 0.8em;line-height: 20px;height: 60px;}
+    </style>
     <script src="<?php echo JS_PATH;?>html54stock/libs/loading.js" type="text/javascript"></script>
     <script src="<?php echo JS_PATH;?>html54stock/libs/util.js" type="text/javascript"></script>
     <script src="<?php echo JS_PATH;?>html54stock/libs/absPainter.js" type="text/javascript"></script>
@@ -744,6 +747,11 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
     </script>
 </head>
 <body onload="drawKL()" style="padding:0;margin:2px">
+    <p><a href="./index.html">返回列表页</a></p>
+    <pre>
+		股票代码：<?php echo $stockCode['code'];?><br>
+		股票代码：<?php echo $stockCode['name'];?><br>
+    </pre>
     <canvas id="canvasKL" width="1002" height="460" style="z-index: 2; border: 1px solid #69c">
         <p>hey,您的浏览器不支持html5，换个浏览器吧，比如google chrome，firefox</p>
     </canvas>
@@ -785,14 +793,5 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 		    return result;
 		}
     </script>
-
-    <style type="text/css">
-    pre{padding: 60px 0 0 30px;color: gray;font-size: .8em;line-height: 20px;}
-    </style>
-    <p><a href="./index.html">返回列表页</a></p>
-    <pre>
-Author:yukaizhao http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
-参与项目或技术交流：<a href="mailto:yukaizhao@gmail.com">yukaizhao@gmail.com</a>
-    </pre>
 </body>
 </html>

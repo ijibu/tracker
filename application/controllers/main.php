@@ -21,11 +21,19 @@ class Main extends MY_Controller {
 		$this->output->enable_profiler(TRUE);
 		$data = array();
 		
-// 		$code = $this->input->get_post('code');
+ 		$code = trim($this->input->get_post('code'));
+ 		if (!$code) {
+ 			$code = '600601';
+ 		}
+ 		
+ 		$this->load->model('stock_model');
+ 		$tmp = $this->stock_model->get(array('code' => $code));
+ 		$stockCode = array_shift($tmp);
+ 		
 // 		$this->load->model('transaction_log_model');
 // 		$data = $this->transaction_log_model->getLogByCode($code);
 		//print_r($data);exit;
-		$this->load->view('k', array('data' => $data));
+		$this->load->view('k', array('data' => $data, 'stockCode' => $stockCode));
 	}
 	
 	/**
@@ -133,7 +141,7 @@ class Main extends MY_Controller {
 	 */
 	public function initAddTransationLog()
 	{
-		$dir = APPPATH . "cache/data/sh";
+		$dir = APPPATH . "cache/data/sz";
 		if (($dh = opendir($dir)) == true) {
 			while (($file = readdir($dh)) !== false) {
 				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
