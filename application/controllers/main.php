@@ -19,15 +19,13 @@ class Main extends MY_Controller {
 	public function index()
 	{
 		$this->output->enable_profiler(TRUE);
-		$results = array();
-		$step = intval($this->input->get_post('step'));
-		if ($step <= 0) {
-			$step = 1;
-		}
-		$results['step'] = $step;
+		$data = array();
 		
-		
-		$this->load->view('index.php', $results);
+// 		$code = $this->input->get_post('code');
+// 		$this->load->model('transaction_log_model');
+// 		$data = $this->transaction_log_model->getLogByCode($code);
+		//print_r($data);exit;
+		$this->load->view('k', array('data' => $data));
 	}
 	
 	/**
@@ -191,17 +189,5 @@ class Main extends MY_Controller {
 // 		$log['closePrice'] = $row[4];
 // 		$log['adjClosePrice'] = $row[6];
 // 		$log['volume'] = $row[5];
-	}
-
-	public function kline() 
-	{
-		$this->output->enable_profiler(TRUE);
-		$data = array();
-		
-		//$code = $this->input->get_post('code');
-		//$this->load->model('transaction_log_model');
-		//$data = $this->transaction_log_model->getLogByCode($code);
-		//print_r($data);exit;
-		$this->load->view('k', array('data' => $data));
 	}
 }
