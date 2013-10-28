@@ -1,0 +1,15 @@
+#################
+## Eclipse
+#################
+.project
+.metadata
+bin/
+*.tmp
+*.bak
+*.swp
+.classpath
+.settings/
+.buildpath
+*.log
+application/logs/
+application/cache/data/
