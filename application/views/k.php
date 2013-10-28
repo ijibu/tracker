@@ -749,10 +749,10 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
     </canvas>
     <div id="debug"></div>
 
-    <script type="text/javascript" src="<?php echo JS_PATH;?>html54stock/k-data2.js"></script>
-    <!-- <script type="text/javascript" src="<?php echo JS_PATH ?>jquery.min.js"></script> -->
+    <script type="text/javascript" src="<?php echo JS_PATH;?>html54stock/k-data.js"></script>
+    <script type="text/javascript" src="<?php echo JS_PATH ?>jquery.min.js"></script>
     <script type="text/javascript">
-    	/**var data = '<?php echo json_encode(1);?>';
+    	//var data = '<?php echo json_encode(1);?>';
 		data = $.parseJSON(data);
 		
 		function getKLData() {
@@ -764,12 +764,12 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 		        //日期,昨收,开盘价,高,低，收,量，额
 		        var item = {
 		            quoteTime: rawData.dateTime,
-		            preClose: rawData.openPrice + Math.random(),
-		            open: rawData.openPrice,
-		            high: rawData.highPrice,
-		            low: rawData.lowPrice,
-		            close: rawData.closePrice,
-		            volume: rawData.volume,
+		            preClose: parseFloat(rawData.openPrice) + Math.random(),
+		            open: parseFloat(rawData.openPrice),
+		            high: parseFloat(rawData.highPrice),
+		            low: parseFloat(rawData.lowPrice),
+		            close: parseFloat(rawData.closePrice),
+		            volume: parseFloat(rawData.volume),
 		            amount: rawData.volume * rawData.openPrice
 		        };
 		        if (ks.length == 0) {
@@ -784,8 +784,6 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 		    result.ks = ks;
 		    return result;
 		}
-	*/
-		
     </script>
 
     <style type="text/css">
