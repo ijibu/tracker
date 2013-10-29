@@ -155,23 +155,22 @@ class Main extends MY_Controller {
 					array_shift($data);
 					
 					$count = count($data);
-					
-					for ($i = 0; $i < $count; $i +=500) {
+					for ($i = $count - 1; $i >= 0; $i -=500) {		//将csv文件中的数据后面的先放入数据库。
 						$sql = "INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ";
 						$inserts = array();
 							
 						for ($j = 0; $j < 500; $j++) {
-							if (isset($data[$i + $j]) && $data[$i + $j]) {
-								$row = $data[$i + $j];
+							if (isset($data[$i - $j]) && $data[$i - $j]) {
+								$row = $data[$i - $j];
 								$row = explode(',', $row);
 								if (count($row) != 7) {
-									error_log("{$code}_{$data[$i + $j]};\r\n", 3, APPPATH . 'cache/inserteror.sql');
+									error_log("{$code}_{$data[$i - $j]};\r\n", 3, APPPATH . 'cache/inserteror.sql');
 									continue;
 								} 
 									
 								$inserts[] = "('{$code}', '{$row[0]}', {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
 							} else {
-								break;
+								continue;
 							}
 						}
 							
