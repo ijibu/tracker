@@ -92,6 +92,33 @@ class Main extends MY_Controller {
 	}
 	
 	/**
+	 * 获取中国在美上市公司的股票代码
+	 */
+	public function getAmercanTickers()
+	{
+		$file = APPPATH . 'cache/meigu.html';
+		$outPutFile = APPPATH . 'cache/meigu.php';
+		$outPutFileIni = APPPATH . 'cache/meigu.ini';
+		$conts = file_get_contents($file);
+	
+		//获取a标签的内容。
+		$sContents = strip_tags($conts);
+		$aContents = explode(')', $sContents);
+		$aContents1 = array();
+		foreach ($aContents as $val) {
+			$row = array();
+			$row = explode("(", trim($val));
+			if (isset($row[1])) {
+				$aContents1["sz_$row[1]"] = $row;
+				error_log("$row[1]\n", 3, $outPutFileIni);
+			}
+		}
+		//echo count($aContents1);exit;
+		$data = var_export($aContents1, true);
+		file_put_contents($outPutFile, "<?php \r\n return $data;?>");
+	}
+	
+	/**
 	 * 获取上证的所有股票的交易数据
 	 */
 	public function getShangTickerTables()
@@ -120,7 +147,8 @@ class Main extends MY_Controller {
 	 */
 	public function initAddStocks()
 	{
-		$exchanges = array('shang' => 1, 'shen' => 2);
+		//$exchanges = array('shang' => 1, 'shen' => 2, 'meigu' => 3);
+		$exchanges = array('meigu' => 3);
 		$this->load->model('stock_model');
 		
 		foreach ($exchanges as $type => $exchange) {
