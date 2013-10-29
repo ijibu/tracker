@@ -1912,3 +1912,4 @@ INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice,
 INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ('002701', '2013-10-28', 31.00, 31.77, 30.61, 30.80, 30.80, 3481000);
 INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ('002702', '2013-10-28', 13.20, 13.36, 12.44, 12.48, 12.48, 2991600);
 INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ('002703', '2013-10-28', 16.85, 16.86, 16.62, 16.75, 16.75, 330200);
+INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ('300113', '2013-10-28', 44.10, 45.28, 43.70, 44.80, 44.80, 3442100);

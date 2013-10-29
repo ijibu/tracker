@@ -192,6 +192,7 @@ class Main extends MY_Controller {
 	public function addTransationLog()
 	{
 		$startDate = trim($this->input->get_post('date'));
+		$code = trim($this->input->get_post('code'));
 		if (!$startDate) {
 			$startDate = date('Y-m-d', strtotime('-1 days'));
 		}
@@ -209,7 +210,12 @@ class Main extends MY_Controller {
 		$context = stream_context_create($opts);
 		
 		$this->load->model('stock_model');
-		$stocks = $this->stock_model->get(array('status' => 1));
+		if (!$code) {
+			$stocks = $this->stock_model->get(array('status' => 1));
+		} else {
+			$stocks = $this->stock_model->get(array('code' => $code));
+		}
+		
 		foreach ($stocks as $stock) {
 			if ($stock['exchange'] == 1) {
 				$exchange = 'SS';
