@@ -747,7 +747,15 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
     </script>
 </head>
 <body onload="drawKL()" style="padding:0;margin:2px">
-    <p><a href="./index.html">返回列表页</a></p>
+	<div>选择股票：
+		<select name="recent_months" onchange="window.location.href = '/?code=' + this.options[this.selectedIndex].value;">
+			<<?php foreach ($stockCodes as $stock): ?>
+			<option <?php echo ($stock['id'] == $stockCode['id']) ? 'selected' : '';?> value="<?php echo $stock['code'];?>">
+				<?php echo $stock['name'];?>
+			</option>
+			<?php endforeach; ?>
+		</select>
+	</div>
     <pre>
 		股票代码：<?php echo $stockCode['code'];?><br>
 		股票代码：<?php echo $stockCode['name'];?><br>
@@ -757,10 +765,10 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
     </canvas>
     <div id="debug"></div>
 
-    <script type="text/javascript" src="<?php echo JS_PATH;?>html54stock/k-data.js"></script>
+    <!-- <script type="text/javascript" src="<?php echo JS_PATH;?>html54stock/k-data.js"></script> -->
     <script type="text/javascript" src="<?php echo JS_PATH ?>jquery.min.js"></script>
     <script type="text/javascript">
-    	//var data = '<?php echo json_encode(1);?>';
+    	var data = '<?php echo json_encode($data);?>';
 		data = $.parseJSON(data);
 		
 		function getKLData() {

@@ -18,7 +18,7 @@ class Main extends MY_Controller {
 	 */
 	public function index()
 	{
-		$this->output->enable_profiler(TRUE);
+		//$this->output->enable_profiler(TRUE);
 		$data = array();
 		
  		$code = trim($this->input->get_post('code'));
@@ -29,11 +29,12 @@ class Main extends MY_Controller {
  		$this->load->model('stock_model');
  		$tmp = $this->stock_model->get(array('code' => $code));
  		$stockCode = array_shift($tmp);
+ 		$stockCodes = $this->getStockCodes();
  		
-// 		$this->load->model('transaction_log_model');
-// 		$data = $this->transaction_log_model->getLogByCode($code);
+		$this->load->model('transaction_log_model');
+		$data = $this->transaction_log_model->getLogByCode($code);
 		//print_r($data);exit;
-		$this->load->view('k', array('data' => $data, 'stockCode' => $stockCode));
+		$this->load->view('k', array('data' => $data, 'stockCode' => $stockCode, 'stockCodes' => $stockCodes));
 	}
 	
 	/**
@@ -186,8 +187,74 @@ class Main extends MY_Controller {
 		}
 	}
 	
+	/**
+	 * 批量添加所有股票某天的交易记录
+	 */
 	public function addTransationLog()
 	{
+		$startDate = trim($this->input->get_post('date'));
+		if (!$startDate) {
+			$startDate = date('Y-m-d', strtotime('-1 days'));
+		}
+		$startDate = explode('-', $startDate);
+		
+		//$url ="http://ichart.yahoo.com/table.csv?s=600000.SS&a=08&b=25&c=2010&d=09&e=8&f=2010&g=d";
+		$startMonth = intval($startDate[1]) - 1;
+		$url ="http://ichart.yahoo.com/table.csv?s=%s.%s&a={$startMonth}&b={$startDate[2]}&c={$startDate[0]}&d={$startMonth}&e={$startDate[2]}&f={$startDate[0]}&g=d";
+		$opts = array(
+  			'http'=>array(
+    			'method'=>"GET",
+  				'timeout'=>60,
+  			)
+		);
+		$context = stream_context_create($opts);
+		
+		$this->load->model('stock_model');
+		$stocks = $this->stock_model->get(array('status' => 1));
+		foreach ($stocks as $stock) {
+			if ($stock['exchange'] == 1) {
+				$exchange = 'SS';
+			} else {
+				$exchange = 'SZ';
+			}
+			$code = $stock['code'];
+			$dataUrl = sprintf($url, $code, $exchange);
+			//echo $dataUrl;
+			$content = @file_get_contents($dataUrl, false, $context);
+			//var_dump($content);exit;
+			error_log($code . '	result:' . $content, 3, APPPATH . 'cache/getcode.log');
+			if ($content) {			//没法排除404的情况
+				$data = explode("\n", $content);
+				array_shift($data);
+				$count = count($data);
+					
+				for ($i = 0; $i < $count; $i++) {
+					$sql = "INSERT INTO transaction_log(stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ";
+					$inserts = array();
+						
+					$row = $data[$i];
+					$row = explode(',', $row);
+					if (count($row) != 7) {
+						continue;
+					}
+						
+					$inserts[] = "('{$code}', '{$row[0]}', {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
+						
+					if ($inserts) {
+						$sql .= implode(',', $inserts) . ";\r\n";
+						//$this->db->query($sql);
+						error_log($sql, 3, APPPATH . "cache/addTransationLog_" . date('Y-m-d') . ".sql");
+					}
+				}
+			} else {	//get错误的情况。
+				$this->stock_model->update(array('id' => $stock['id'], 'status' => 2));
+			}
+		}
+		
+		echo 'sucess';
+		
+		//print_r($stocks);exit;
+		
 // 		$log = array();
 // 		$log['stockCode'] = $code;
 // 		$log['dateTime'] = $row[0];
@@ -197,5 +264,24 @@ class Main extends MY_Controller {
 // 		$log['closePrice'] = $row[4];
 // 		$log['adjClosePrice'] = $row[6];
 // 		$log['volume'] = $row[5];
+	}
+	
+	/**
+	 * 获取股票代码
+	 */
+	protected function getStockCodes()
+	{
+		$cacheFile = APPPATH . 'cache/stockCodes.php';
+		if (file_exists($cacheFile)) {
+			return include $cacheFile;
+		} else {
+			$this->load->model('stock_model');
+			$stocks = $this->stock_model->get(array('status' => 1));
+			$data = var_export($stocks, true);
+			file_put_contents($cacheFile, "<?php  return $data;?>");
+			return $stocks;
+		}
+		
+		
 	}
 }
