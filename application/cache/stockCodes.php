@@ -15311,4 +15311,3124 @@
     'exchange' => '2',
     'status' => '1',
   ),
+  1914 => 
+  array (
+    'id' => '2830',
+    'code' => '300113',
+    'name' => '顺网科技',
+    'exchange' => '2',
+    'status' => '1',
+  ),
+  1915 => 
+  array (
+    'id' => '3074',
+    'code' => 'XSELD',
+    'name' => '新华悦动传媒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1916 => 
+  array (
+    'id' => '3075',
+    'code' => 'XING',
+    'name' => '侨兴环球',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1917 => 
+  array (
+    'id' => '3076',
+    'code' => 'QXM',
+    'name' => '侨兴移动',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1918 => 
+  array (
+    'id' => '3077',
+    'code' => 'NDAC',
+    'name' => '新龙亚洲',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1919 => 
+  array (
+    'id' => '3078',
+    'code' => 'TSTC',
+    'name' => '东方信联',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1920 => 
+  array (
+    'id' => '3079',
+    'code' => 'SSRX',
+    'name' => '三生制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1921 => 
+  array (
+    'id' => '3080',
+    'code' => 'YTEC',
+    'name' => '宇信易诚科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1922 => 
+  array (
+    'id' => '3081',
+    'code' => 'DYNP',
+    'name' => '多元印刷',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1923 => 
+  array (
+    'id' => '3082',
+    'code' => 'SYSW',
+    'name' => '思源经纪',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1924 => 
+  array (
+    'id' => '3083',
+    'code' => 'WWIN',
+    'name' => '稳健医疗',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1925 => 
+  array (
+    'id' => '3084',
+    'code' => 'JNGW',
+    'name' => '经纬国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1926 => 
+  array (
+    'id' => '3085',
+    'code' => 'YUII',
+    'name' => '山东昱合',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1927 => 
+  array (
+    'id' => '3086',
+    'code' => 'FSIN',
+    'name' => '大连傅氏',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1928 => 
+  array (
+    'id' => '3087',
+    'code' => 'TXIC',
+    'name' => '同心国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1929 => 
+  array (
+    'id' => '3088',
+    'code' => 'RINO',
+    'name' => '绿诺科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1930 => 
+  array (
+    'id' => '3089',
+    'code' => 'CRTP',
+    'name' => '瑞达电源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1931 => 
+  array (
+    'id' => '3090',
+    'code' => 'CHBT',
+    'name' => '中国生物',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1932 => 
+  array (
+    'id' => '3091',
+    'code' => 'WATG',
+    'name' => '万得汽车',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1933 => 
+  array (
+    'id' => '3092',
+    'code' => 'CCME',
+    'name' => '中国高速传媒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1934 => 
+  array (
+    'id' => '3093',
+    'code' => 'FUQI',
+    'name' => '福麒国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1935 => 
+  array (
+    'id' => '3094',
+    'code' => 'WUHN',
+    'name' => '武汉通用',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1936 => 
+  array (
+    'id' => '3095',
+    'code' => 'APWR',
+    'name' => '高科能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1937 => 
+  array (
+    'id' => '3096',
+    'code' => 'DEER',
+    'name' => '德尔集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1938 => 
+  array (
+    'id' => '3097',
+    'code' => 'JGBO',
+    'name' => '江波制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1939 => 
+  array (
+    'id' => '3098',
+    'code' => 'CHIO',
+    'name' => '智远天下',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1940 => 
+  array (
+    'id' => '3099',
+    'code' => 'CELM',
+    'name' => '岳鹏成电机',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1941 => 
+  array (
+    'id' => '3100',
+    'code' => 'CDII',
+    'name' => '华达产业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1942 => 
+  array (
+    'id' => '3101',
+    'code' => 'NOEC',
+    'name' => '新东方能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1943 => 
+  array (
+    'id' => '3102',
+    'code' => 'NRE',
+    'name' => '挪宝新能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1944 => 
+  array (
+    'id' => '3103',
+    'code' => 'AAAE',
+    'name' => 'AAA能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1945 => 
+  array (
+    'id' => '3104',
+    'code' => 'AACAY',
+    'name' => '瑞声',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1946 => 
+  array (
+    'id' => '3105',
+    'code' => 'ACGBY',
+    'name' => '中国农行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1947 => 
+  array (
+    'id' => '3106',
+    'code' => 'AGVO',
+    'name' => '宝生集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1948 => 
+  array (
+    'id' => '3107',
+    'code' => 'AHCHY',
+    'name' => '安徽海螺',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1949 => 
+  array (
+    'id' => '3108',
+    'code' => 'AICAF',
+    'name' => '中国国航',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1950 => 
+  array (
+    'id' => '3109',
+    'code' => 'AIDA',
+    'name' => '爱大制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1951 => 
+  array (
+    'id' => '3110',
+    'code' => 'AIVI',
+    'name' => '泛蓝国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1952 => 
+  array (
+    'id' => '3111',
+    'code' => 'AKRK',
+    'name' => '亚洲软木',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1953 => 
+  array (
+    'id' => '3112',
+    'code' => 'ALMMF',
+    'name' => '中铝公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1954 => 
+  array (
+    'id' => '3113',
+    'code' => 'AMVGF',
+    'name' => '澳科控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1955 => 
+  array (
+    'id' => '3114',
+    'code' => 'ANGGY',
+    'name' => '鞍钢',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1956 => 
+  array (
+    'id' => '3115',
+    'code' => 'ANNC',
+    'name' => '安耐克',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1957 => 
+  array (
+    'id' => '3116',
+    'code' => 'ANPDF',
+    'name' => '安踏',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1958 => 
+  array (
+    'id' => '3117',
+    'code' => 'ANNO',
+    'name' => '美国纳米晶硅',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1959 => 
+  array (
+    'id' => '3118',
+    'code' => 'ALRX',
+    'name' => '阿尔法阿克斯公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1960 => 
+  array (
+    'id' => '3119',
+    'code' => 'AMCG',
+    'name' => '爱美柯',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1961 => 
+  array (
+    'id' => '3120',
+    'code' => 'AMGY',
+    'name' => '美国金属科技公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1962 => 
+  array (
+    'id' => '3121',
+    'code' => 'ARTB',
+    'name' => '艺术精品',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1963 => 
+  array (
+    'id' => '3122',
+    'code' => 'ASOE',
+    'name' => '阿波罗',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1964 => 
+  array (
+    'id' => '3123',
+    'code' => 'BACHY',
+    'name' => '中国银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1965 => 
+  array (
+    'id' => '3124',
+    'code' => 'BBCZ',
+    'name' => '杨凌博迪森',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1966 => 
+  array (
+    'id' => '3125',
+    'code' => 'BCAUY',
+    'name' => '华晨中国',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1967 => 
+  array (
+    'id' => '3126',
+    'code' => 'BCHM',
+    'name' => '北京世纪健康',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1968 => 
+  array (
+    'id' => '3127',
+    'code' => 'BCMXY',
+    'name' => '交通银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1969 => 
+  array (
+    'id' => '3128',
+    'code' => 'BDEV',
+    'name' => '中国企发',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1970 => 
+  array (
+    'id' => '3129',
+    'code' => 'NEWN',
+    'name' => '新能源系统',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1971 => 
+  array (
+    'id' => '3130',
+    'code' => 'BEER',
+    'name' => '清源啤酒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1972 => 
+  array (
+    'id' => '3131',
+    'code' => 'BEIJF',
+    'name' => '北辰实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1973 => 
+  array (
+    'id' => '3132',
+    'code' => 'BELLY',
+    'name' => '百丽',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1974 => 
+  array (
+    'id' => '3133',
+    'code' => 'BFAR',
+    'name' => '亚洲生物制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1975 => 
+  array (
+    'id' => '3134',
+    'code' => 'BHKLY',
+    'name' => '中银香港',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1976 => 
+  array (
+    'id' => '3135',
+    'code' => 'BJCHF',
+    'name' => '首都国际机场',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1977 => 
+  array (
+    'id' => '3136',
+    'code' => 'BJINY',
+    'name' => '北京控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1978 => 
+  array (
+    'id' => '3137',
+    'code' => 'BKEAY',
+    'name' => '东亚银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1979 => 
+  array (
+    'id' => '3138',
+    'code' => 'BOPH',
+    'name' => '渤海制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1980 => 
+  array (
+    'id' => '3139',
+    'code' => 'BOTRF',
+    'name' => '汉科环境',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1981 => 
+  array (
+    'id' => '3140',
+    'code' => 'BOTX',
+    'name' => '邦泰',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1982 => 
+  array (
+    'id' => '3141',
+    'code' => 'BSDGY',
+    'name' => '波司登',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1983 => 
+  array (
+    'id' => '3142',
+    'code' => 'BSHG',
+    'name' => '百隆东方',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1984 => 
+  array (
+    'id' => '3143',
+    'code' => 'BWOWF',
+    'name' => '万桥兴业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1985 => 
+  array (
+    'id' => '3144',
+    'code' => 'BYDDF',
+    'name' => '比亚迪',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1986 => 
+  array (
+    'id' => '3145',
+    'code' => 'CABLF',
+    'name' => '中国 Cablecom',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1987 => 
+  array (
+    'id' => '3146',
+    'code' => 'CAGM',
+    'name' => '绿色材料',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1988 => 
+  array (
+    'id' => '3147',
+    'code' => 'CAOVY',
+    'name' => '中国海外发展',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1989 => 
+  array (
+    'id' => '3148',
+    'code' => 'CARCY',
+    'name' => '华润水泥',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1990 => 
+  array (
+    'id' => '3149',
+    'code' => 'CASDY',
+    'name' => '中国中材',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1991 => 
+  array (
+    'id' => '3150',
+    'code' => 'CBEH',
+    'name' => '中国综合能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1992 => 
+  array (
+    'id' => '3151',
+    'code' => 'CBGH',
+    'name' => '中国溢佰联合',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1993 => 
+  array (
+    'id' => '3152',
+    'code' => 'CBLUY',
+    'name' => '中海石油',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1994 => 
+  array (
+    'id' => '3153',
+    'code' => 'CBLY',
+    'name' => '台基实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1995 => 
+  array (
+    'id' => '3154',
+    'code' => 'CBUMY',
+    'name' => '中国建材',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1996 => 
+  array (
+    'id' => '3155',
+    'code' => 'CBRAF',
+    'name' => 'CBR酿造',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1997 => 
+  array (
+    'id' => '3156',
+    'code' => 'CCCGY',
+    'name' => '中交股份',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1998 => 
+  array (
+    'id' => '3157',
+    'code' => 'JMHLY',
+    'name' => '怡和控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  1999 => 
+  array (
+    'id' => '3158',
+    'code' => 'XHFNF',
+    'name' => '新华财经',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2000 => 
+  array (
+    'id' => '3159',
+    'code' => 'HGHN',
+    'name' => '泰科铁塔',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2001 => 
+  array (
+    'id' => '3160',
+    'code' => 'JPAK',
+    'name' => '青岛人印',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2002 => 
+  array (
+    'id' => '3161',
+    'code' => 'HGKGY',
+    'name' => '电能实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2003 => 
+  array (
+    'id' => '3162',
+    'code' => 'JZHG',
+    'name' => '金藏煌',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2004 => 
+  array (
+    'id' => '3163',
+    'code' => 'KEYP',
+    'name' => '科元石化',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2005 => 
+  array (
+    'id' => '3164',
+    'code' => 'KIRI',
+    'name' => 'QLDC',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2006 => 
+  array (
+    'id' => '3165',
+    'code' => 'HHGM',
+    'name' => '惠恒医疗',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2007 => 
+  array (
+    'id' => '3166',
+    'code' => 'KMSWF',
+    'name' => '信星鞋业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2008 => 
+  array (
+    'id' => '3167',
+    'code' => 'HIGR',
+    'name' => '百丰电子',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2009 => 
+  array (
+    'id' => '3168',
+    'code' => 'XNFHF',
+    'name' => '三八妇乐',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2010 => 
+  array (
+    'id' => '3169',
+    'code' => 'HIIDY',
+    'name' => '恒鼎实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2011 => 
+  array (
+    'id' => '3170',
+    'code' => 'XNGSY',
+    'name' => '新奥能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2012 => 
+  array (
+    'id' => '3171',
+    'code' => 'XSELY',
+    'name' => '新华悦动',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2013 => 
+  array (
+    'id' => '3172',
+    'code' => 'XYIGF',
+    'name' => '信义玻璃',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2014 => 
+  array (
+    'id' => '3173',
+    'code' => 'HKAEY',
+    'name' => '港机工程',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2015 => 
+  array (
+    'id' => '3174',
+    'code' => 'YINGY',
+    'name' => '盈德气体',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2016 => 
+  array (
+    'id' => '3175',
+    'code' => 'YIPCF',
+    'name' => '叶氏化工',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2017 => 
+  array (
+    'id' => '3176',
+    'code' => 'YSYB',
+    'name' => '阳霖油脂',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2018 => 
+  array (
+    'id' => '3177',
+    'code' => 'JADA',
+    'name' => '佘太翠玉',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2019 => 
+  array (
+    'id' => '3178',
+    'code' => 'YYINE',
+    'name' => '亚亿国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2020 => 
+  array (
+    'id' => '3179',
+    'code' => 'KRYPY',
+    'name' => '嘉里建设',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2021 => 
+  array (
+    'id' => '3180',
+    'code' => 'YZCHF',
+    'name' => '兖州煤业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2022 => 
+  array (
+    'id' => '3181',
+    'code' => 'ZHAOF',
+    'name' => '招金矿业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2023 => 
+  array (
+    'id' => '3182',
+    'code' => 'PPCCY',
+    'name' => '中国人财保险',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2024 => 
+  array (
+    'id' => '3183',
+    'code' => 'JELCY',
+    'name' => '德昌电机',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2025 => 
+  array (
+    'id' => '3184',
+    'code' => 'HKXCF',
+    'name' => '港交所',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2026 => 
+  array (
+    'id' => '3185',
+    'code' => 'PSGP',
+    'name' => '美商百胜客',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2027 => 
+  array (
+    'id' => '3186',
+    'code' => 'QING',
+    'name' => '红冠鞋业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2028 => 
+  array (
+    'id' => '3187',
+    'code' => 'KURU',
+    'name' => '昆仑生物',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2029 => 
+  array (
+    'id' => '3188',
+    'code' => 'RDBO',
+    'name' => '乳多宝',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2030 => 
+  array (
+    'id' => '3189',
+    'code' => 'RNFU',
+    'name' => '荣福水产',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2031 => 
+  array (
+    'id' => '3190',
+    'code' => 'RNHEF',
+    'name' => '人和商业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2032 => 
+  array (
+    'id' => '3191',
+    'code' => 'JEXYF',
+    'name' => '江苏宁沪高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2033 => 
+  array (
+    'id' => '3192',
+    'code' => 'SEXHF',
+    'name' => '成渝高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2034 => 
+  array (
+    'id' => '3193',
+    'code' => 'KWHAY',
+    'name' => '嘉华国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2035 => 
+  array (
+    'id' => '3194',
+    'code' => 'JEXYY',
+    'name' => '江苏宁沪高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2036 => 
+  array (
+    'id' => '3195',
+    'code' => 'SGAS',
+    'name' => '中燃伟业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2037 => 
+  array (
+    'id' => '3196',
+    'code' => 'SGHIY',
+    'name' => '上海实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2038 => 
+  array (
+    'id' => '3197',
+    'code' => 'JIXAY',
+    'name' => '江铜集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2039 => 
+  array (
+    'id' => '3198',
+    'code' => 'SHALY',
+    'name' => '香格里拉亚洲',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2040 => 
+  array (
+    'id' => '3199',
+    'code' => 'LEGE',
+    'name' => '乐君传媒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2041 => 
+  array (
+    'id' => '3200',
+    'code' => 'SHANF',
+    'name' => '墨龙石油机械',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2042 => 
+  array (
+    'id' => '3201',
+    'code' => 'SHGXY',
+    'name' => '神冠控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2043 => 
+  array (
+    'id' => '3202',
+    'code' => 'SHKLY',
+    'name' => '重汽（香港）',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2044 => 
+  array (
+    'id' => '3203',
+    'code' => 'LKHLY',
+    'name' => '龙工控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2045 => 
+  array (
+    'id' => '3204',
+    'code' => 'SHTDF',
+    'name' => '国药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2046 => 
+  array (
+    'id' => '3205',
+    'code' => 'SHTGY',
+    'name' => '信得',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2047 => 
+  array (
+    'id' => '3206',
+    'code' => 'TRUHY',
+    'name' => '信利国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2048 => 
+  array (
+    'id' => '3207',
+    'code' => 'TSGTF',
+    'name' => '青岛啤酒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2049 => 
+  array (
+    'id' => '3208',
+    'code' => 'TSYHY',
+    'name' => '中国航信集团公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2050 => 
+  array (
+    'id' => '3209',
+    'code' => 'TTNDY',
+    'name' => '创科实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2051 => 
+  array (
+    'id' => '3210',
+    'code' => 'XNWU',
+    'name' => '玄武集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2052 => 
+  array (
+    'id' => '3211',
+    'code' => 'LMPMY',
+    'name' => '理文造纸',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2053 => 
+  array (
+    'id' => '3212',
+    'code' => 'LTUS',
+    'name' => '莲花制药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2054 => 
+  array (
+    'id' => '3213',
+    'code' => 'LZENF',
+    'name' => '利展环境',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2055 => 
+  array (
+    'id' => '3214',
+    'code' => 'MAANF',
+    'name' => '马鞍山钢铁',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2056 => 
+  array (
+    'id' => '3215',
+    'code' => 'MAORF',
+    'name' => '文化东方',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2057 => 
+  array (
+    'id' => '3216',
+    'code' => 'MLLUY',
+    'name' => '冶金科工',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2058 => 
+  array (
+    'id' => '3217',
+    'code' => 'CEAI',
+    'name' => '中教联盟',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2059 => 
+  array (
+    'id' => '3218',
+    'code' => 'MSAH',
+    'name' => '万胜农业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2060 => 
+  array (
+    'id' => '3219',
+    'code' => 'CECX',
+    'name' => '超越极限集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2061 => 
+  array (
+    'id' => '3220',
+    'code' => 'CEHD',
+    'name' => '中国电子集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2062 => 
+  array (
+    'id' => '3221',
+    'code' => 'NANI',
+    'name' => '新逻辑动漫',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2063 => 
+  array (
+    'id' => '3222',
+    'code' => 'TVBCY',
+    'name' => '无线电视',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2064 => 
+  array (
+    'id' => '3223',
+    'code' => 'CEVIY',
+    'name' => '光大控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2065 => 
+  array (
+    'id' => '3224',
+    'code' => 'TXNM',
+    'name' => '天鑫矿业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2066 => 
+  array (
+    'id' => '3225',
+    'code' => 'NIVS',
+    'name' => '纳伟仕视听',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2067 => 
+  array (
+    'id' => '3226',
+    'code' => 'UOLI',
+    'name' => '优按网络电台',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2068 => 
+  array (
+    'id' => '3227',
+    'code' => 'CGLO',
+    'name' => '北纬国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2069 => 
+  array (
+    'id' => '3228',
+    'code' => 'CHME',
+    'name' => '康采恩',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2070 => 
+  array (
+    'id' => '3229',
+    'code' => 'NOBGF',
+    'name' => '来宝集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2071 => 
+  array (
+    'id' => '3230',
+    'code' => 'CGND',
+    'name' => '宏达度假',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2072 => 
+  array (
+    'id' => '3231',
+    'code' => 'VKIN',
+    'name' => '维京投资',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2073 => 
+  array (
+    'id' => '3232',
+    'code' => 'CGRE',
+    'name' => '中国绿色能源产业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2074 => 
+  array (
+    'id' => '3233',
+    'code' => 'VLOV',
+    'name' => '韦拿',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2075 => 
+  array (
+    'id' => '3234',
+    'code' => 'CGPI',
+    'name' => '中国红石集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2076 => 
+  array (
+    'id' => '3235',
+    'code' => 'WGHGY',
+    'name' => '永亨银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2077 => 
+  array (
+    'id' => '3236',
+    'code' => 'VTSYF',
+    'name' => '维他奶',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2078 => 
+  array (
+    'id' => '3237',
+    'code' => 'WHHT',
+    'name' => '网合科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2079 => 
+  array (
+    'id' => '3238',
+    'code' => 'WKBT',
+    'name' => '维康科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2080 => 
+  array (
+    'id' => '3239',
+    'code' => 'NUIN',
+    'name' => '保健星',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2081 => 
+  array (
+    'id' => '3240',
+    'code' => 'NWRLY',
+    'name' => '新世界百货',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2082 => 
+  array (
+    'id' => '3241',
+    'code' => 'SLUXY',
+    'name' => '罗欣药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2083 => 
+  array (
+    'id' => '3242',
+    'code' => 'SLVA',
+    'name' => '银燕木业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2084 => 
+  array (
+    'id' => '3243',
+    'code' => 'SNAS',
+    'name' => '中建担保',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2085 => 
+  array (
+    'id' => '3244',
+    'code' => 'SNFRY',
+    'name' => '中化化肥',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2086 => 
+  array (
+    'id' => '3245',
+    'code' => 'SNLAY',
+    'name' => '信和置业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2087 => 
+  array (
+    'id' => '3246',
+    'code' => 'SNPMF',
+    'name' => '中国石化',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2088 => 
+  array (
+    'id' => '3247',
+    'code' => 'OPEI',
+    'name' => '东方石油',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2089 => 
+  array (
+    'id' => '3248',
+    'code' => 'UIBGF',
+    'name' => '联合经纪',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2090 => 
+  array (
+    'id' => '3249',
+    'code' => 'WGLD',
+    'name' => '三金国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2091 => 
+  array (
+    'id' => '3250',
+    'code' => 'HKXCY',
+    'name' => '港交所',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2092 => 
+  array (
+    'id' => '3251',
+    'code' => 'HLDCY',
+    'name' => '恒基兆业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2093 => 
+  array (
+    'id' => '3252',
+    'code' => 'HLDVF',
+    'name' => '恒基兆业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2094 => 
+  array (
+    'id' => '3253',
+    'code' => 'HLPPY',
+    'name' => '恒隆地产',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2095 => 
+  array (
+    'id' => '3254',
+    'code' => 'HMCTF',
+    'name' => '美兰股份',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2096 => 
+  array (
+    'id' => '3255',
+    'code' => 'HNLGF',
+    'name' => '恒隆集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2097 => 
+  array (
+    'id' => '3256',
+    'code' => 'HNLGY',
+    'name' => '恒隆集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2098 => 
+  array (
+    'id' => '3257',
+    'code' => 'CGSXF',
+    'name' => '天瑞',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2099 => 
+  array (
+    'id' => '3258',
+    'code' => 'HOKCY',
+    'name' => '煤气公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2100 => 
+  array (
+    'id' => '3259',
+    'code' => 'CGYV',
+    'name' => '中国能源回收',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2101 => 
+  array (
+    'id' => '3260',
+    'code' => 'CHCC',
+    'name' => '嘉周化工',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2102 => 
+  array (
+    'id' => '3261',
+    'code' => 'HOWWY',
+    'name' => '合和实业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2103 => 
+  array (
+    'id' => '3262',
+    'code' => 'CHCG',
+    'name' => '中国3C集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2104 => 
+  array (
+    'id' => '3263',
+    'code' => 'SRRE',
+    'name' => '旭升集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2105 => 
+  array (
+    'id' => '3264',
+    'code' => 'SRRY',
+    'name' => '盛棵再生资源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2106 => 
+  array (
+    'id' => '3265',
+    'code' => 'STIE',
+    'name' => '圣天龙',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2107 => 
+  array (
+    'id' => '3266',
+    'code' => 'CHDA',
+    'name' => '中国数字动画',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2108 => 
+  array (
+    'id' => '3267',
+    'code' => 'HQGE',
+    'name' => '环球教育',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2109 => 
+  array (
+    'id' => '3268',
+    'code' => 'STTFY',
+    'name' => '数码通',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2110 => 
+  array (
+    'id' => '3269',
+    'code' => 'HRELF',
+    'name' => '海尔',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2111 => 
+  array (
+    'id' => '3270',
+    'code' => 'SUHJY',
+    'name' => '新鸿基',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2112 => 
+  array (
+    'id' => '3271',
+    'code' => 'CHDP',
+    'name' => 'M&H石油',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2113 => 
+  array (
+    'id' => '3272',
+    'code' => 'SUWG',
+    'name' => '三维科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2114 => 
+  array (
+    'id' => '3273',
+    'code' => 'CHEUY',
+    'name' => '长实',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2115 => 
+  array (
+    'id' => '3274',
+    'code' => 'SUWN',
+    'name' => '申旺国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2116 => 
+  array (
+    'id' => '3275',
+    'code' => 'SWRAY',
+    'name' => '太古',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2117 => 
+  array (
+    'id' => '3276',
+    'code' => 'HRELY',
+    'name' => '海尔',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2118 => 
+  array (
+    'id' => '3277',
+    'code' => 'SYUP',
+    'name' => '玉同药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2119 => 
+  array (
+    'id' => '3278',
+    'code' => 'HSNGY',
+    'name' => '恒生银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2120 => 
+  array (
+    'id' => '3279',
+    'code' => 'HSYT',
+    'name' => '家庭系统',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2121 => 
+  array (
+    'id' => '3280',
+    'code' => 'SOUG',
+    'name' => '搜三百',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2122 => 
+  array (
+    'id' => '3281',
+    'code' => 'HTCMY',
+    'name' => '日立建机',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2123 => 
+  array (
+    'id' => '3282',
+    'code' => 'HUABF',
+    'name' => '华宝国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2124 => 
+  array (
+    'id' => '3283',
+    'code' => 'HUIHY',
+    'name' => '华宝国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2125 => 
+  array (
+    'id' => '3284',
+    'code' => 'HUIY',
+    'name' => '惠影科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2126 => 
+  array (
+    'id' => '3285',
+    'code' => 'HYSNY',
+    'name' => '希慎兴业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2127 => 
+  array (
+    'id' => '3286',
+    'code' => 'IDCBF',
+    'name' => '工商银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2128 => 
+  array (
+    'id' => '3287',
+    'code' => 'IDCBY',
+    'name' => '工商银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2129 => 
+  array (
+    'id' => '3288',
+    'code' => 'IDCX',
+    'name' => '华北园艺',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2130 => 
+  array (
+    'id' => '3289',
+    'code' => 'IICN',
+    'name' => '情报系统',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2131 => 
+  array (
+    'id' => '3290',
+    'code' => 'CGEIU',
+    'name' => '中国成长股权投资',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2132 => 
+  array (
+    'id' => '3291',
+    'code' => 'IINHY',
+    'name' => '意马',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2133 => 
+  array (
+    'id' => '3292',
+    'code' => 'IKTSY',
+    'name' => '天祥集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2134 => 
+  array (
+    'id' => '3293',
+    'code' => 'SSW-C',
+    'name' => '西斯班',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2135 => 
+  array (
+    'id' => '3294',
+    'code' => 'XYIGY',
+    'name' => '信义玻璃',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2136 => 
+  array (
+    'id' => '3295',
+    'code' => 'TSGTY',
+    'name' => '青岛啤酒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2137 => 
+  array (
+    'id' => '3296',
+    'code' => 'CHPN',
+    'name' => '',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2138 => 
+  array (
+    'id' => '3297',
+    'code' => 'ILVL',
+    'name' => 'i-level',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2139 => 
+  array (
+    'id' => '3298',
+    'code' => 'CHFY',
+    'name' => '中国林业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2140 => 
+  array (
+    'id' => '3299',
+    'code' => 'CHGI',
+    'name' => '兴和兴永',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2141 => 
+  array (
+    'id' => '3300',
+    'code' => 'CHGY',
+    'name' => '中国能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2142 => 
+  array (
+    'id' => '3301',
+    'code' => 'CHPXY',
+    'name' => '中国太保',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2143 => 
+  array (
+    'id' => '3302',
+    'code' => 'CHWTF',
+    'name' => '中国无线',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2144 => 
+  array (
+    'id' => '3303',
+    'code' => 'CHHE',
+    'name' => '健康产业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2145 => 
+  array (
+    'id' => '3304',
+    'code' => 'CHSY',
+    'name' => '康哲药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2146 => 
+  array (
+    'id' => '3305',
+    'code' => 'CICHY',
+    'name' => '中国建设银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2147 => 
+  array (
+    'id' => '3306',
+    'code' => 'CHRI',
+    'name' => '银发白芷',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2148 => 
+  array (
+    'id' => '3307',
+    'code' => 'ZHDM',
+    'name' => '中汇道明',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2149 => 
+  array (
+    'id' => '3308',
+    'code' => 'ZHEXF',
+    'name' => '沪杭甬高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2150 => 
+  array (
+    'id' => '3309',
+    'code' => 'CITAY',
+    'name' => '中海集装箱',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2151 => 
+  array (
+    'id' => '3310',
+    'code' => 'ZHYLF',
+    'name' => '兆恒水电',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2152 => 
+  array (
+    'id' => '3311',
+    'code' => 'CICOY',
+    'name' => '中国远洋',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2153 => 
+  array (
+    'id' => '3312',
+    'code' => 'CIDHY',
+    'name' => '中粮',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2154 => 
+  array (
+    'id' => '3313',
+    'code' => 'CHSTY',
+    'name' => '中国传动',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2155 => 
+  array (
+    'id' => '3314',
+    'code' => 'CIVN',
+    'name' => '协同教学',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2156 => 
+  array (
+    'id' => '3315',
+    'code' => 'CIFHY',
+    'name' => 'zyjt',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2157 => 
+  array (
+    'id' => '3316',
+    'code' => 'CIHD',
+    'name' => '常达国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2158 => 
+  array (
+    'id' => '3317',
+    'code' => 'CIHKY',
+    'name' => '招商银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2159 => 
+  array (
+    'id' => '3318',
+    'code' => 'ZIJMF',
+    'name' => '紫金矿业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2160 => 
+  array (
+    'id' => '3319',
+    'code' => 'CHOR',
+    'name' => '中国有机',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2161 => 
+  array (
+    'id' => '3320',
+    'code' => 'ZLIOY',
+    'name' => '中联重科',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2162 => 
+  array (
+    'id' => '3321',
+    'code' => 'ZTCOF',
+    'name' => '中兴通讯',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2163 => 
+  array (
+    'id' => '3322',
+    'code' => 'CHLBF',
+    'name' => '中国卫生',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2164 => 
+  array (
+    'id' => '3323',
+    'code' => 'CIWT',
+    'name' => '中国工业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2165 => 
+  array (
+    'id' => '3324',
+    'code' => 'ZYCI',
+    'name' => '紫阳陶瓷',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2166 => 
+  array (
+    'id' => '3325',
+    'code' => 'TAAI',
+    'name' => '古今通宝',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2167 => 
+  array (
+    'id' => '3326',
+    'code' => 'TCEHY',
+    'name' => '腾讯',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2168 => 
+  array (
+    'id' => '3327',
+    'code' => 'TCEPY',
+    'name' => '创业环保',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2169 => 
+  array (
+    'id' => '3328',
+    'code' => 'TCYMF',
+    'name' => '康师傅',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2170 => 
+  array (
+    'id' => '3329',
+    'code' => 'CKGT',
+    'name' => '康太仙人掌',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2171 => 
+  array (
+    'id' => '3330',
+    'code' => 'CKUN',
+    'name' => '圣火药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2172 => 
+  array (
+    'id' => '3331',
+    'code' => 'SHWGY',
+    'name' => '山东威高',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2173 => 
+  array (
+    'id' => '3332',
+    'code' => 'SHZNY',
+    'name' => '深圳高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2174 => 
+  array (
+    'id' => '3333',
+    'code' => 'SIAF',
+    'name' => '美国一力',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2175 => 
+  array (
+    'id' => '3334',
+    'code' => 'SIBO',
+    'name' => '信邦娱乐',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2176 => 
+  array (
+    'id' => '3335',
+    'code' => 'SIMTF',
+    'name' => '晨讯科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2177 => 
+  array (
+    'id' => '3336',
+    'code' => 'OROVY',
+    'name' => '东方海外',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2178 => 
+  array (
+    'id' => '3337',
+    'code' => 'TCTZF',
+    'name' => '腾讯',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2179 => 
+  array (
+    'id' => '3338',
+    'code' => 'TCYMY',
+    'name' => '康师傅',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2180 => 
+  array (
+    'id' => '3339',
+    'code' => 'TMGG',
+    'name' => 'Tintic金矿',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2181 => 
+  array (
+    'id' => '3340',
+    'code' => 'SIELY',
+    'name' => '上海电气',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2182 => 
+  array (
+    'id' => '3341',
+    'code' => 'SIOLY',
+    'name' => '远洋地产',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2183 => 
+  array (
+    'id' => '3342',
+    'code' => 'TRUHF',
+    'name' => '信利国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2184 => 
+  array (
+    'id' => '3343',
+    'code' => 'SWRBY',
+    'name' => '太古',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2185 => 
+  array (
+    'id' => '3344',
+    'code' => 'ORSX',
+    'name' => '奥盛技术',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2186 => 
+  array (
+    'id' => '3345',
+    'code' => 'PBEP',
+    'name' => '太平洋宝飘',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2187 => 
+  array (
+    'id' => '3346',
+    'code' => 'CHNC',
+    'name' => '中基建',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2188 => 
+  array (
+    'id' => '3347',
+    'code' => 'PIAIF',
+    'name' => '平安保险',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2189 => 
+  array (
+    'id' => '3348',
+    'code' => 'PKSGY',
+    'name' => '百盛商业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2190 => 
+  array (
+    'id' => '3349',
+    'code' => 'PLTYF',
+    'name' => '纬丰科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2191 => 
+  array (
+    'id' => '3350',
+    'code' => 'KSTV',
+    'name' => '坤伦文化',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2192 => 
+  array (
+    'id' => '3351',
+    'code' => 'LOKAF',
+    'name' => '独橡收购',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2193 => 
+  array (
+    'id' => '3352',
+    'code' => 'WOSSF',
+    'name' => '奥思集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2194 => 
+  array (
+    'id' => '3353',
+    'code' => 'LOKKF',
+    'name' => '独橡收购',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2195 => 
+  array (
+    'id' => '3354',
+    'code' => 'WSYS',
+    'name' => '韦斯特加德',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2196 => 
+  array (
+    'id' => '3355',
+    'code' => 'WTFS',
+    'name' => '信德燃喷',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2197 => 
+  array (
+    'id' => '3356',
+    'code' => 'WUMSF',
+    'name' => '北京物美',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2198 => 
+  array (
+    'id' => '3357',
+    'code' => 'WWNTF',
+    'name' => '旺旺中国',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2199 => 
+  array (
+    'id' => '3358',
+    'code' => 'WYNMF',
+    'name' => '永利澳门',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2200 => 
+  array (
+    'id' => '3359',
+    'code' => 'ZHEXY',
+    'name' => '沪杭甬高速',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2201 => 
+  array (
+    'id' => '3360',
+    'code' => 'ZIJMY',
+    'name' => '紫金矿业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2202 => 
+  array (
+    'id' => '3361',
+    'code' => 'ZTCOY',
+    'name' => '中兴通讯',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2203 => 
+  array (
+    'id' => '3362',
+    'code' => 'WUMSY',
+    'name' => '北京物美',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2204 => 
+  array (
+    'id' => '3363',
+    'code' => 'WWNTY',
+    'name' => '旺旺中国',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2205 => 
+  array (
+    'id' => '3364',
+    'code' => 'WYNMY',
+    'name' => '永利澳门',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2206 => 
+  array (
+    'id' => '3365',
+    'code' => 'MNOIY',
+    'name' => '文化东方',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2207 => 
+  array (
+    'id' => '3366',
+    'code' => 'NOBGY',
+    'name' => '来宝集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2208 => 
+  array (
+    'id' => '3367',
+    'code' => 'CLPXY',
+    'name' => '龙源电力',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2209 => 
+  array (
+    'id' => '3368',
+    'code' => 'CMAKY',
+    'name' => '民生银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2210 => 
+  array (
+    'id' => '3369',
+    'code' => 'CMCI',
+    'name' => '中现信息',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2211 => 
+  array (
+    'id' => '3370',
+    'code' => 'CMKM',
+    'name' => '营销传媒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2212 => 
+  array (
+    'id' => '3371',
+    'code' => 'CMNW',
+    'name' => '中国M161',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2213 => 
+  array (
+    'id' => '3372',
+    'code' => 'CNBI',
+    'name' => '百草堂',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2214 => 
+  array (
+    'id' => '3373',
+    'code' => 'PNGAY',
+    'name' => '平安保险',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2215 => 
+  array (
+    'id' => '3374',
+    'code' => 'CNER',
+    'name' => '中国新能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2216 => 
+  array (
+    'id' => '3375',
+    'code' => 'CPCAY',
+    'name' => '国泰航空',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2217 => 
+  array (
+    'id' => '3376',
+    'code' => 'KHDHF',
+    'name' => '洪堡维达格',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2218 => 
+  array (
+    'id' => '3377',
+    'code' => 'CPDU',
+    'name' => '嘉力药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2219 => 
+  array (
+    'id' => '3378',
+    'code' => 'CPDV',
+    'name' => '中房发展',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2220 => 
+  array (
+    'id' => '3379',
+    'code' => 'CPKPF',
+    'name' => '卜蜂国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2221 => 
+  array (
+    'id' => '3380',
+    'code' => 'CPQQ',
+    'name' => '中电设备',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2222 => 
+  array (
+    'id' => '3381',
+    'code' => 'CRHKY',
+    'name' => '华润',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2223 => 
+  array (
+    'id' => '3382',
+    'code' => 'CRHO',
+    'name' => '呈辉置业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2224 => 
+  array (
+    'id' => '3383',
+    'code' => 'CRJI',
+    'name' => '润基水泥',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2225 => 
+  array (
+    'id' => '3384',
+    'code' => 'CRRWF',
+    'name' => '中国合力',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2226 => 
+  array (
+    'id' => '3385',
+    'code' => 'CRUI',
+    'name' => '瑞泰国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2227 => 
+  array (
+    'id' => '3386',
+    'code' => 'CHOLY',
+    'name' => '中海油服',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2228 => 
+  array (
+    'id' => '3387',
+    'code' => 'CHOLF',
+    'name' => '中海油服',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2229 => 
+  array (
+    'id' => '3388',
+    'code' => 'CRWOY',
+    'name' => '中国中铁',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2230 => 
+  array (
+    'id' => '3389',
+    'code' => 'CBIU',
+    'name' => '西安量维',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2231 => 
+  array (
+    'id' => '3390',
+    'code' => 'CSDXY',
+    'name' => '中海发展',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2232 => 
+  array (
+    'id' => '3391',
+    'code' => 'CSEHY',
+    'name' => '源畅光电',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2233 => 
+  array (
+    'id' => '3392',
+    'code' => 'CSGH',
+    'name' => '大连新阳',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2234 => 
+  array (
+    'id' => '3393',
+    'code' => 'CSGJ',
+    'name' => '双吉水泥',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2235 => 
+  array (
+    'id' => '3394',
+    'code' => 'CSKD',
+    'name' => '兴天下',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2236 => 
+  array (
+    'id' => '3395',
+    'code' => 'CCGY',
+    'name' => '福建中德能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2237 => 
+  array (
+    'id' => '3396',
+    'code' => 'CSNH',
+    'name' => '曹普工艺',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2238 => 
+  array (
+    'id' => '3397',
+    'code' => 'CSOL',
+    'name' => '德利国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2239 => 
+  array (
+    'id' => '3398',
+    'code' => 'CSRGY',
+    'name' => '中国南车',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2240 => 
+  array (
+    'id' => '3399',
+    'code' => 'CSUAY',
+    'name' => '中国神华',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2241 => 
+  array (
+    'id' => '3400',
+    'code' => 'CSWG',
+    'name' => '森宇国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2242 => 
+  array (
+    'id' => '3401',
+    'code' => 'CSWYY',
+    'name' => '神威药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2243 => 
+  array (
+    'id' => '3402',
+    'code' => 'CTEK',
+    'name' => '新兴佳',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2244 => 
+  array (
+    'id' => '3403',
+    'code' => 'CTHL',
+    'name' => '中拖',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2245 => 
+  array (
+    'id' => '3404',
+    'code' => 'CTOP',
+    'name' => '西拓',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2246 => 
+  array (
+    'id' => '3405',
+    'code' => 'CTPCY',
+    'name' => '中信泰富',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2247 => 
+  array (
+    'id' => '3406',
+    'code' => 'CTVZ',
+    'name' => '中国旅游度假村控股公司',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2248 => 
+  array (
+    'id' => '3407',
+    'code' => 'CTXIF',
+    'name' => '中国亚麻',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2249 => 
+  array (
+    'id' => '3408',
+    'code' => 'CPKPY',
+    'name' => '卜蜂国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2250 => 
+  array (
+    'id' => '3409',
+    'code' => 'HUAZ',
+    'name' => '华野燃气',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2251 => 
+  array (
+    'id' => '3410',
+    'code' => 'CCOZY',
+    'name' => '中煤能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2252 => 
+  array (
+    'id' => '3411',
+    'code' => 'CCOZF',
+    'name' => '中煤能源',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2253 => 
+  array (
+    'id' => '3412',
+    'code' => 'CDBH',
+    'name' => '中国生物技术控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2254 => 
+  array (
+    'id' => '3413',
+    'code' => 'CDBT',
+    'name' => '甘肃大圣',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2255 => 
+  array (
+    'id' => '3414',
+    'code' => 'CDGXF',
+    'name' => '中国动向',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2256 => 
+  array (
+    'id' => '3415',
+    'code' => 'CDKG',
+    'name' => '杜康酒业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2257 => 
+  array (
+    'id' => '3416',
+    'code' => 'CDSG',
+    'name' => '东升伟业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2258 => 
+  array (
+    'id' => '3417',
+    'code' => 'AIRYY',
+    'name' => '中国国航',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2259 => 
+  array (
+    'id' => '3418',
+    'code' => 'BACHF',
+    'name' => '中国银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2260 => 
+  array (
+    'id' => '3419',
+    'code' => 'BCAUF',
+    'name' => '华晨中国',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2261 => 
+  array (
+    'id' => '3420',
+    'code' => 'BKEAF',
+    'name' => '东亚银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2262 => 
+  array (
+    'id' => '3421',
+    'code' => 'CICHF',
+    'name' => '中国建设银行',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2263 => 
+  array (
+    'id' => '3422',
+    'code' => 'BYDDY',
+    'name' => '比亚迪',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2264 => 
+  array (
+    'id' => '3423',
+    'code' => 'DPNEY',
+    'name' => '达芙妮集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2265 => 
+  array (
+    'id' => '3424',
+    'code' => 'DRCR',
+    'name' => '徳爱尔羊绒',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2266 => 
+  array (
+    'id' => '3425',
+    'code' => 'DUKS',
+    'name' => '太阳禽业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2267 => 
+  array (
+    'id' => '3426',
+    'code' => 'DXIN',
+    'name' => '东信生物科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2268 => 
+  array (
+    'id' => '3427',
+    'code' => 'EAST',
+    'name' => '东方安防',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2269 => 
+  array (
+    'id' => '3428',
+    'code' => 'EESC',
+    'name' => '亿丰环境',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2270 => 
+  array (
+    'id' => '3429',
+    'code' => 'EKONY',
+    'name' => 'e-KONG集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2271 => 
+  array (
+    'id' => '3430',
+    'code' => 'ENHD',
+    'name' => '大连础明',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2272 => 
+  array (
+    'id' => '3431',
+    'code' => 'ESPGY',
+    'name' => '思捷环球',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2273 => 
+  array (
+    'id' => '3432',
+    'code' => 'FCPG',
+    'name' => '第一医药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2274 => 
+  array (
+    'id' => '3433',
+    'code' => 'FEPU',
+    'name' => '飞鹰塑胶',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2275 => 
+  array (
+    'id' => '3434',
+    'code' => 'FIRRY',
+    'name' => '第一拖拉机',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2276 => 
+  array (
+    'id' => '3435',
+    'code' => 'FLMS',
+    'name' => 'FLM矿业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2277 => 
+  array (
+    'id' => '3436',
+    'code' => 'FLSW',
+    'name' => '时力科技',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2278 => 
+  array (
+    'id' => '3437',
+    'code' => 'FPAFF',
+    'name' => '第一太平洋',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2279 => 
+  array (
+    'id' => '3438',
+    'code' => 'FXCNY',
+    'name' => '富士康控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2280 => 
+  array (
+    'id' => '3439',
+    'code' => 'GCIH',
+    'name' => '大中华控股',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2281 => 
+  array (
+    'id' => '3440',
+    'code' => 'GGDVY',
+    'name' => '粤海投资',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2282 => 
+  array (
+    'id' => '3441',
+    'code' => 'GHII',
+    'name' => '金马国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2283 => 
+  array (
+    'id' => '3442',
+    'code' => 'GIGNF',
+    'name' => '云顶新加坡',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2284 => 
+  array (
+    'id' => '3443',
+    'code' => 'GIGNY',
+    'name' => '云顶新加坡',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2285 => 
+  array (
+    'id' => '3444',
+    'code' => 'GMDTF',
+    'name' => '金卫医疗',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2286 => 
+  array (
+    'id' => '3445',
+    'code' => 'GOEG',
+    'name' => '金象玻璃',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2287 => 
+  array (
+    'id' => '3446',
+    'code' => 'GPHG',
+    'name' => '环球医药',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2288 => 
+  array (
+    'id' => '3447',
+    'code' => 'GTVI',
+    'name' => '中威盛世',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2289 => 
+  array (
+    'id' => '3448',
+    'code' => 'GWLLY',
+    'name' => '长城汽车',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2290 => 
+  array (
+    'id' => '3449',
+    'code' => 'GXYEF',
+    'name' => '银河娱乐',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2291 => 
+  array (
+    'id' => '3450',
+    'code' => 'GXYEY',
+    'name' => '银河娱乐',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2292 => 
+  array (
+    'id' => '3451',
+    'code' => 'GZPHY',
+    'name' => '广州药业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2293 => 
+  array (
+    'id' => '3452',
+    'code' => 'GZUHY',
+    'name' => '广州富力',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2294 => 
+  array (
+    'id' => '3453',
+    'code' => 'HDVTY',
+    'name' => '恒基兆业',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2295 => 
+  array (
+    'id' => '3454',
+    'code' => 'HEGIF',
+    'name' => '恒安国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2296 => 
+  array (
+    'id' => '3455',
+    'code' => 'HEGIY',
+    'name' => '恒安国际',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2297 => 
+  array (
+    'id' => '3456',
+    'code' => 'FPAFY',
+    'name' => '第一太平洋',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2298 => 
+  array (
+    'id' => '3457',
+    'code' => 'CUII',
+    'name' => '安侯保代',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2299 => 
+  array (
+    'id' => '3458',
+    'code' => 'CVPH',
+    'name' => '维特奥健康管理',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2300 => 
+  array (
+    'id' => '3459',
+    'code' => 'CWPWF',
+    'name' => '中国风电集团',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2301 => 
+  array (
+    'id' => '3460',
+    'code' => 'QUNR',
+    'name' => '去哪儿',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2302 => 
+  array (
+    'id' => '3461',
+    'code' => 'WUBA',
+    'name' => '58同城',
+    'exchange' => '3',
+    'status' => '1',
+  ),
+  2303 => 
+  array (
+    'id' => '3462',
+    'code' => 'SFUN',
+    'name' => '搜房网',
+    'exchange' => '3',
+    'status' => '1',
+  ),
 );?>

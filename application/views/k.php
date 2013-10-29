@@ -748,7 +748,13 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 </head>
 <body onload="drawKL()" style="padding:0;margin:2px">
 	<div>选择股票：
-		<select name="recent_months" onchange="window.location.href = '/?code=' + this.options[this.selectedIndex].value;">
+		<select name="stockType" onchange="getStocksByType(this.options[this.selectedIndex].value);">
+			<option value="0">选择交易所</option>
+			<option <?php echo (1 == $stockCode['exchange']) ? 'selected' : '';?> value="1">上证</option>
+			<option <?php echo (2 == $stockCode['exchange']) ? 'selected' : '';?> value="2">深证</option>
+			<option <?php echo (3 == $stockCode['exchange']) ? 'selected' : '';?> value="3">美股</option>
+		</select>
+		<select id="stocks" onchange="window.location.href = '/?code=' + this.options[this.selectedIndex].value;">
 			<<?php foreach ($stockCodes as $stock): ?>
 			<option <?php echo ($stock['id'] == $stockCode['id']) ? 'selected' : '';?> value="<?php echo $stock['code'];?>">
 				<?php echo $stock['name'];?>
@@ -799,6 +805,24 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 		    }
 		    result.ks = ks;
 		    return result;
+		}
+
+		/**
+		 * 获取股票数据
+		 */
+		function getStocksByType(type){
+		    var str = "<option value='0'>请选择股票</option>", url = 'main/getStocks';    
+		    
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: {type: type},
+				dataType: 'json',
+				async: false,
+				success: function(d){
+					$('#stocks').html(str+d.data);
+				}
+			 });
 		}
     </script>
 </body>

@@ -29,7 +29,7 @@ class Main extends MY_Controller {
  		$this->load->model('stock_model');
  		$tmp = $this->stock_model->get(array('code' => $code));
  		$stockCode = array_shift($tmp);
- 		$stockCodes = $this->getStockCodes();
+ 		$stockCodes = $this->getStockByTpye($stockCode['exchange']);
  		
 		$this->load->model('transaction_log_model');
 		$data = $this->transaction_log_model->getLogByCode($code);
@@ -314,7 +314,37 @@ class Main extends MY_Controller {
 			file_put_contents($cacheFile, "<?php  return $data;?>");
 			return $stocks;
 		}
+	}
+	
+	public function getStocks() 
+	{
+		$type = $this->input->get_post('type');
+		$stocks = $this->getStockCodes();
 		
+		$optionStr = '';
 		
+		foreach ($stocks as $row) {
+			if ($row['exchange'] == $type) {
+				$optionStr .= "<option value='{$row['code']}'>{$row['name']}</option>";
+			}
+		}
+		
+		echo json_encode(array('ret' => 1, 'data' => $optionStr));
+		exit;
+	}
+	
+	public function getStockByTpye($type) 
+	{
+		$stocks = $this->getStockCodes();
+		
+		$data = array();
+		
+		foreach ($stocks as $row) {
+			if ($row['exchange'] == $type) {
+				$data[] = $row;
+			}
+		}
+		
+		return $data;
 	}
 }
