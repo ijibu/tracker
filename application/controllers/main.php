@@ -398,4 +398,51 @@ class Main extends MY_Controller {
 		
 		return $data;
 	}
+	
+	/**
+	 * 填充股票公司信息。
+	 */
+	public function fillCompanyInfo()
+	{
+		$this->load->model('company_model');
+		$this->load->model('transaction_log_model');
+		
+		//$companyInfos = $this->company_model->get(array('limit' => 1));
+		$companyInfos = $this->company_model->get();
+		foreach ($companyInfos as $company) {
+			$update = array();
+			$sql1 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 order by openPrice ASC LIMIT 1";
+			$query1 = $this->db->query($sql1);
+			$lowest = $query1->result_array();
+			$lowest = array_shift($lowest);
+			//print_r($lowest);exit;
+			
+			$sql2 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 order by openPrice DESC LIMIT 1";
+			$query2 = $this->db->query($sql2);
+			$highest = $query2->result_array();
+			$highest = array_shift($highest);
+			
+			$sql3 = "select * from transaction_log where stockCode='{$company['stockCode']}' order by dateTime DESC LIMIT 1";
+			$query3 = $this->db->query($sql3);
+			$nowPrice = $query3->result_array();
+			$nowPrice = array_shift($nowPrice);
+			
+			$update['lowestPrice'] = $lowest['openPrice'];
+			$update['highestPrice'] = $highest['openPrice'];
+			$update['lowestDate'] = $lowest['dateTime'];
+			$update['highestDate'] = $highest['dateTime'];
+			$update['diffPrice'] = $highest['openPrice'] - $lowest['openPrice'];
+			$update['id'] = $company['id'];
+			$update['nowPrice'] = $nowPrice['closePrice'];
+			
+			$this->company_model->update($update);
+		}
+		echo 'scuess!';
+	}
+	
+	//分析公司股价
+	public function parseCompany()
+	{
+		//SELECT `id` , `stockCode` , `publishPrice` , `inMarketDate` , `nowPrice` , `lowestPrice` , `highestPrice` , `lowestDate` , `highestDate` , `diffPrice` FROM `company_info` ORDER BY `company_info`.`diffPrice` DESC 
+	}
 }

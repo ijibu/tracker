@@ -70,3 +70,10 @@ CREATE TABLE IF NOT EXISTS `company_info` (
   `webSite` varchar(50) default NULL COMMENT '公司网址',
   PRIMARY KEY  (`id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='股票公司信息表';
+
+ALTER TABLE `company_info` ADD `lowestPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '历史最低价格',
+ADD `highestPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '历史最高价格',
+ADD `lowestDate` CHAR( 10 ) NOT NULL COMMENT '历史最低日期',
+ADD `highestDate` CHAR( 10 ) NOT NULL COMMENT '历史最高日期',
+ADD `diffPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '最高最低价格差';
+ALTER TABLE `company_info` ADD `nowPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '当前股价' AFTER `webSite` ;
