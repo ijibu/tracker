@@ -27,10 +27,10 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
 参与项目或技术交流：yukaizhao@gmail.com
 */
         function convertDate(val, withWeek) {
-            return val;
-            var year = Math.ceil(val / 10000) - 1;
-            var day = val % 100;
-            var month = (Math.ceil(val / 100) - 1) % 100;
+        	var d = new Date(val*1000);
+            var year = d.getFullYear();
+            var day = d.getDay();
+            var month = d.getMonth()+1;
             var d = new Date();
             d.setYear(year);
             d.setMonth(month - 1);

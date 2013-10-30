@@ -77,3 +77,12 @@ ADD `lowestDate` CHAR( 10 ) NOT NULL COMMENT '历史最低日期',
 ADD `highestDate` CHAR( 10 ) NOT NULL COMMENT '历史最高日期',
 ADD `diffPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '最高最低价格差';
 ALTER TABLE `company_info` ADD `nowPrice` DECIMAL( 7, 2 ) NOT NULL COMMENT '当前股价' AFTER `webSite` ;
+
+ALTER TABLE `company_info` CHANGE `publishDate` `publishDate` INT(11) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT 0 COMMENT '发行日期';
+
+--
+-- 转换日期格式为时间戳
+--
+UPDATE `transaction_log` SET `dateTime`=unix_timestamp(`dateTime`) WHERE 1;
+
+ALTER TABLE `transaction_log` CHANGE `dateTime` `dateTime` INT( 11 ) NOT NULL COMMENT '日期';

@@ -406,43 +406,66 @@ class Main extends MY_Controller {
 	{
 		$this->load->model('company_model');
 		$this->load->model('transaction_log_model');
+		$startTime = strtotime('2013-1-1');
+		//$startTime = time();
 		
 		//$companyInfos = $this->company_model->get(array('limit' => 1));
 		$companyInfos = $this->company_model->get();
 		foreach ($companyInfos as $company) {
 			$update = array();
-			$sql1 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 order by openPrice ASC LIMIT 1";
+			$sql1 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 and dateTime < {$startTime} order by openPrice ASC LIMIT 1";
 			$query1 = $this->db->query($sql1);
 			$lowest = $query1->result_array();
 			$lowest = array_shift($lowest);
 			//print_r($lowest);exit;
 			
-			$sql2 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 order by openPrice DESC LIMIT 1";
+			$sql2 = "select * from transaction_log where stockCode='{$company['stockCode']}' and openPrice > 0 and dateTime < {$startTime} order by openPrice DESC LIMIT 1";
 			$query2 = $this->db->query($sql2);
 			$highest = $query2->result_array();
 			$highest = array_shift($highest);
 			
-			$sql3 = "select * from transaction_log where stockCode='{$company['stockCode']}' order by dateTime DESC LIMIT 1";
+			$sql3 = "select * from transaction_log where stockCode='{$company['stockCode']}' and dateTime < {$startTime} order by dateTime DESC LIMIT 1";
 			$query3 = $this->db->query($sql3);
 			$nowPrice = $query3->result_array();
 			$nowPrice = array_shift($nowPrice);
 			
 			$update['lowestPrice'] = $lowest['openPrice'];
 			$update['highestPrice'] = $highest['openPrice'];
-			$update['lowestDate'] = $lowest['dateTime'];
-			$update['highestDate'] = $highest['dateTime'];
+			$update['lowestDate'] = date('Y-m-d', $lowest['dateTime']);
+			$update['highestDate'] = date('Y-m-d', $highest['dateTime']);
 			$update['diffPrice'] = $highest['openPrice'] - $lowest['openPrice'];
-			$update['id'] = $company['id'];
 			$update['nowPrice'] = $nowPrice['closePrice'];
+			$update['id'] = $company['id'];
 			
 			$this->company_model->update($update);
 		}
 		echo 'scuess!';
 	}
 	
+	public function updateTransactionLog() 
+	{
+		
+	}
+	
 	//分析公司股价
 	public function parseCompany()
 	{
 		//SELECT `id` , `stockCode` , `publishPrice` , `inMarketDate` , `nowPrice` , `lowestPrice` , `highestPrice` , `lowestDate` , `highestDate` , `diffPrice` FROM `company_info` ORDER BY `company_info`.`diffPrice` DESC 
+	}
+	
+	//获取黑马股
+	public function getHeiMa()
+	{
+		$sql = "select * from company_info where diffPrice > 20 and lowestDate > '2012-01-01' and highestDate < '2011-01-01' and nowPrice < lowestPrice + 5 order by diffPrice DESC LIMIT 0,30";
+		$query = $this->db->query($sql);
+		$stocks = $query->result_array();
+		$codes = array();
+		foreach ($stocks as $row) {
+			//$codes[] = $row['stockCode'] . ',' . $row['nowPrice'];
+			$codes[] = $row['stockCode'];
+		}
+		
+		echo implode(',', $codes);
+		
 	}
 }
