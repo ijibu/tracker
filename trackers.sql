@@ -57,3 +57,16 @@ CREATE TABLE IF NOT EXISTS `transaction_log` (
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE IF NOT EXISTS `company_info` (
+  `id` int(11) NOT NULL auto_increment,
+  `stockCode` char(6) NOT NULL COMMENT '证券代码',
+  `email` varchar(30) default NULL COMMENT '电子信箱',
+  `publishDate` char(10) default NULL COMMENT '发行日期',
+  `publishPrice` decimal(7,2) default NULL COMMENT '发行价格',
+  `inMarketDate` char(10) default NULL COMMENT '上市日期',
+  `dealer` varchar(100) default NULL COMMENT '主承销商',
+  `inMarketRecommendPerson` varchar(100) default NULL COMMENT '上市推荐人',
+  `webSite` varchar(50) default NULL COMMENT '公司网址',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='股票公司信息表';
