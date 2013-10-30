@@ -2,7 +2,6 @@
 
 if (!defined('BASEPATH'))
 	exit('No direct script access allowed');
-
 class Main extends MY_Controller {
 
 	public function __construct() 
@@ -126,8 +125,8 @@ class Main extends MY_Controller {
 		//http://table.finance.yahoo.com/table.csv?s=600000.ss
 		$baseUrl = "http://table.finance.yahoo.com/table.csv?s=";
 		$file = APPPATH . 'cache/shang.php';
-		$outPutBaseFile = APPPATH . 'cache/data/sh/';
-		$erro_file = APPPATH . 'cache/erro.log';
+		$outPutBaseFile = APPPATH . 'cache/data/code/sh/';
+		$erro_file = APPPATH . 'cache/log/erro.log';
 		
 		$data = include $file;
 		
@@ -170,7 +169,7 @@ class Main extends MY_Controller {
 	 */
 	public function initAddTransationLog()
 	{
-		$dir = APPPATH . "cache/data/sz";
+		$dir = APPPATH . "cache/data/code/sz";
 		if (($dh = opendir($dir)) == true) {
 			while (($file = readdir($dh)) !== false) {
 				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
@@ -192,7 +191,7 @@ class Main extends MY_Controller {
 								$row = $data[$i - $j];
 								$row = explode(',', $row);
 								if (count($row) != 7) {
-									error_log("{$code}_{$data[$i - $j]};\r\n", 3, APPPATH . 'cache/inserteror.sql');
+									error_log("{$code}_{$data[$i - $j]};\r\n", 3, APPPATH . 'cache/sql/inserteror.sql');
 									continue;
 								} 
 									
@@ -205,13 +204,61 @@ class Main extends MY_Controller {
 						if ($inserts) {
 							$sql .= implode(',', $inserts) . ";\r\n";
 							$this->db->query($sql);
-							//error_log($sql, 3, APPPATH . 'cache/insertlog.sql');
+							//error_log($sql, 3, APPPATH . 'cache/sql/insertlog.sql');
 						}
 					}
 				}
 			}
 			closedir($dh);
 		}
+	}
+	
+	/**
+	 * 初始化添加公司信息
+	 */
+	public function initAddCompanyInfo()
+	{
+		$dir = APPPATH . "cache/data/company/sz";
+		$this->load->library('smiplehtml');
+		
+		if (($dh = opendir($dir)) == true) {
+			while (($file = readdir($dh)) !== false) {
+				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
+					$content = '';
+					$fileName = explode('.', $file);
+					$code = $fileName[0];
+					$filePath =  $dir."/".$file;
+					
+					$html = $this->smiplehtml->file_get_html($filePath);
+					$item = $html->find('div.graybgH', 2);
+					
+					if (!$item) {
+						continue;
+					}
+					error_log($code . "\r\n", 3, APPPATH . 'cache/log/addCompanyInfo.log');
+					
+					//http://www.tracker.com/main/initAddCompanyInfo
+					$webSite = $item->find('strong', 0)->nextSibling()->plaintext;	//公司网址
+					$email = $item->find('strong', 1)->nextSibling()->plaintext;	//电子信箱：
+					$PublishDate = $item->find('strong', 3)->nextSibling()->plaintext;	//发行日期：
+					$PublishPrice = $item->find('strong', 4)->nextSibling()->plaintext;	//发行价格：
+					$InMarketDate = $item->find('strong', 5)->nextSibling()->plaintext;	//上市日期：
+					$Dealer = $item->find('strong', 6)->nextSibling()->plaintext;	//主承销商：
+					$InMarketRecommendPerson = $item->find('strong', 7)->nextSibling()->plaintext;	//上市推荐人
+					if (!$PublishDate || !$PublishPrice || !$InMarketDate) {
+						continue;
+					}
+						
+					$sql = "INSERT INTO company_info(stockCode, webSite, email, publishDate, publishPrice, inMarketDate, dealer, inMarketRecommendPerson) VALUES ('$code', '$webSite', '$email', '$PublishDate', $PublishPrice, '$InMarketDate', '$Dealer', '$InMarketRecommendPerson');";
+					//$this->db->query($sql);
+					error_log($sql . "\r\n", 3, APPPATH . 'cache/sql/insertCompanyInfo.sql');
+					unset($item);
+					$html->clear();unset($html);
+				}
+			}
+			closedir($dh);
+		}
+		echo 'scuess!';
 	}
 	
 	/**
@@ -239,7 +286,7 @@ class Main extends MY_Controller {
 		
 		$this->load->model('stock_model');
 		if (!$code) {
-			$stocks = $this->stock_model->get(array('status' => 1));
+			$stocks = $this->stock_model->get(array('status' => 1, 'exchange' => 3));
 		} else {
 			$stocks = $this->stock_model->get(array('code' => $code));
 		}
@@ -247,15 +294,19 @@ class Main extends MY_Controller {
 		foreach ($stocks as $stock) {
 			if ($stock['exchange'] == 1) {
 				$exchange = 'SS';
-			} else {
+			} else if ($stock['exchange'] == 2){
 				$exchange = 'SZ';
+			} else {
+				$startDay = intval($startDate[2]) - 1;	//美股时间和中国时间有时差
+				$url ="http://ichart.yahoo.com/table.csv?s=%s%s&a={$startMonth}&b={$startDay}&c={$startDate[0]}&d={$startMonth}&e={$startDay}&f={$startDate[0]}&g=d";
+				$exchange = '';
 			}
 			$code = $stock['code'];
 			$dataUrl = sprintf($url, $code, $exchange);
-			//echo $dataUrl;
+			//echo $dataUrl;exit;
 			$content = @file_get_contents($dataUrl, false, $context);
 			//var_dump($content);exit;
-			error_log($code . '	result:' . $content, 3, APPPATH . 'cache/getcode.log');
+			error_log($code . '	result:' . $content, 3, APPPATH . 'cache/log/getcode.log');
 			if ($content) {			//没法排除404的情况
 				$data = explode("\n", $content);
 				array_shift($data);
@@ -276,7 +327,7 @@ class Main extends MY_Controller {
 					if ($inserts) {
 						$sql .= implode(',', $inserts) . ";\r\n";
 						//$this->db->query($sql);
-						error_log($sql, 3, APPPATH . "cache/addTransationLog_" . date('Y-m-d') . ".sql");
+						error_log($sql, 3, APPPATH . "cache/sql/addTransationLog_" . date('Y-m-d') . ".sql");
 					}
 				}
 			} else {	//get错误的情况。

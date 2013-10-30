@@ -1,5 +1,7 @@
-1.每股数据抓取
+1.美股数据抓取
 http://vip.stock.finance.sina.com.cn/mkt/#finance_us
+美股交易记录抓取(纳斯达克)
+http://www.nasdaq.com/symbol/sfun/historical#.UWdnJBDMhHk
 
 2.公司信息获取，必须上市价，上市时间
 http://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CorpInfo/stockid/000939.phtml
