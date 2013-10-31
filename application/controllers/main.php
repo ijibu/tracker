@@ -169,7 +169,7 @@ class Main extends MY_Controller {
 	 */
 	public function initAddTransationLog()
 	{
-		$dir = APPPATH . "cache/data/code/sz";
+		$dir = APPPATH . "cache/data/code/us";
 		if (($dh = opendir($dir)) == true) {
 			while (($file = readdir($dh)) !== false) {
 				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
@@ -194,8 +194,8 @@ class Main extends MY_Controller {
 									error_log("{$code}_{$data[$i - $j]};\r\n", 3, APPPATH . 'cache/sql/inserteror.sql');
 									continue;
 								} 
-									
-								$inserts[] = "('{$code}', '{$row[0]}', {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
+								$time = strtotime($row[0]);
+								$inserts[] = "('{$code}', {$time}, {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
 							} else {
 								continue;
 							}
@@ -204,13 +204,14 @@ class Main extends MY_Controller {
 						if ($inserts) {
 							$sql .= implode(',', $inserts) . ";\r\n";
 							$this->db->query($sql);
-							//error_log($sql, 3, APPPATH . 'cache/sql/insertlog.sql');
+							error_log($sql, 3, APPPATH . 'cache/sql/insertlog.sql');
 						}
 					}
 				}
 			}
 			closedir($dh);
 		}
+		echo 'scuess!';
 	}
 	
 	/**
@@ -286,7 +287,7 @@ class Main extends MY_Controller {
 		
 		$this->load->model('stock_model');
 		if (!$code) {
-			$stocks = $this->stock_model->get(array('status' => 1, 'exchange' => 3));
+			$stocks = $this->stock_model->get(array('status' => 1));
 		} else {
 			$stocks = $this->stock_model->get(array('code' => $code));
 		}
@@ -321,8 +322,8 @@ class Main extends MY_Controller {
 					if (count($row) != 7) {
 						continue;
 					}
-						
-					$inserts[] = "('{$code}', '{$row[0]}', {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
+					$time = strtotime($row[0]);
+					$inserts[] = "('{$code}', {$time}, {$row[1]}, {$row[2]}, {$row[3]}, {$row[4]}, {$row[6]}, {$row[5]})";
 						
 					if ($inserts) {
 						$sql .= implode(',', $inserts) . ";\r\n";

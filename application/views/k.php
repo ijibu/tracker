@@ -29,12 +29,8 @@ blog:http://www.cnblogs.com/yukaizhao/ http://weibo.com/yukaizhao/
         function convertDate(val, withWeek) {
         	var d = new Date(val*1000);
             var year = d.getFullYear();
-            var day = d.getDay();
+            var day = d.getDate();
             var month = d.getMonth()+1;
-            var d = new Date();
-            d.setYear(year);
-            d.setMonth(month - 1);
-            d.setDate(day);
             if (month < 10) month = '0' + month;
             if (day < 10) day = '0' + day;
             if (withWeek) {
