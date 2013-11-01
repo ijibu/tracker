@@ -469,4 +469,24 @@ class Main extends MY_Controller {
 		echo implode(',', $codes);
 		
 	}
+
+	//备份数据
+	public function backUpData() 
+	{
+		$id = intval($this->input->get_post('id'));
+		if (!$id) {
+			$id = 7268276;
+		}
+		$sql = "SELECT * FROM `transaction_log` WHERE `id` >=$id ORDER BY `transaction_log`.`id` ASC";
+
+		$query = $this->db->query($sql);
+		$logs = $query->result_array();
+		foreach ($logs as $row) {
+			$sql1 = '';
+			$sql1 = "INSERT INTO transaction_log(id, stockCode, dateTime, openPrice, highPrice, lowPrice, closePrice, adjClosePrice, volume) VALUES ";
+			$sql1 .= "({$row['id']}, '{$row['stockCode']}', {$row['dateTime']}, {$row['openPrice']}, {$row['highPrice']}, {$row['lowPrice']}, {$row['closePrice']}, {$row['adjClosePrice']}, {$row['volume']});";
+						
+			error_log($sql1 . "\r\n", 3, APPPATH . "cache/sql/addTransationLog_" . date('Y-m-d') . ".sql");
+		}
+	}
 }
