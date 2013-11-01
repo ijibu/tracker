@@ -5,3 +5,7 @@ http://www.nasdaq.com/symbol/sfun/historical#.UWdnJBDMhHk
 
 2.公司信息获取，必须上市价，上市时间
 http://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CorpInfo/stockid/000939.phtml
+
+网易数据源
+http://quotes.money.163.com/trade/lsjysj_300226.html
+http://data.eastmoney.com/cjsj/gpjytj.html
