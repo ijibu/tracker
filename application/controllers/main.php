@@ -489,4 +489,9 @@ class Main extends MY_Controller {
 			error_log($sql1 . "\r\n", 3, APPPATH . "cache/sql/addTransationLog_" . date('Y-m-d') . ".sql");
 		}
 	}
+	
+	public function parseHtml() 
+	{
+		$this->load->view('html');	
+	}
 }
