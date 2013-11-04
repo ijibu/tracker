@@ -1,44 +1,44 @@
-1.ÃÀ¹ÉÊı¾İ×¥È¡
+1.ç¾è‚¡æ•°æ®æŠ“å–
 http://vip.stock.finance.sina.com.cn/mkt/#finance_us
-ÃÀ¹É½»Ò×¼ÇÂ¼×¥È¡(ÄÉË¹´ï¿Ë)
+ç¾è‚¡äº¤æ˜“è®°å½•æŠ“å–(çº³æ–¯è¾¾å…‹)
 http://www.nasdaq.com/symbol/sfun/historical#.UWdnJBDMhHk
 
-2.¹«Ë¾ĞÅÏ¢»ñÈ¡£¬±ØĞëÉÏÊĞ¼Û£¬ÉÏÊĞÊ±¼ä
+2.å…¬å¸ä¿¡æ¯è·å–ï¼Œå¿…é¡»ä¸Šå¸‚ä»·ï¼Œä¸Šå¸‚æ—¶é—´
 http://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CorpInfo/stockid/000939.phtml
 
-ÍøÒ×Êı¾İÔ´
+ç½‘æ˜“æ•°æ®æº
 http://quotes.money.163.com/trade/lsjysj_300226.html
 http://data.eastmoney.com/cjsj/gpjytj.html
 
-ÉÏÖ¤½»Ò×ËùÊı¾İÔ´
+ä¸Šè¯äº¤æ˜“æ‰€æ•°æ®æº
 http://www.sse.com.cn/assortment/stock/list/name/
 
-ÉîÛÚ½»Ò×ËùÊı¾İ»ñÈ¡
+æ·±åœ³äº¤æ˜“æ‰€æ•°æ®è·å–
 http://www.szse.cn/main/marketdata/jypz/colist/
 
 
-ÉÏº£¸ÖÁª(300226)ÀúÊ·×Ê½ğÁ÷ÏòÒ»ÀÀ 
+ä¸Šæµ·é’¢è”(300226)å†å²èµ„é‡‘æµå‘ä¸€è§ˆ 
 http://data.eastmoney.com/zjlx/300226.html
 
-Öğ±Ê½»Ò×Ã÷Ï¸
+é€ç¬”äº¤æ˜“æ˜ç»†
 http://quote.eastmoney.com/f1.html?code=300226&market=2
 
 
-ÍøÒ×²Æ¾­Êı¾İ×¥È¡
-1.µ±ÈÕ´óµ¥Í³¼Æ
+ç½‘æ˜“è´¢ç»æ•°æ®æŠ“å–
+1.å½“æ—¥å¤§å•ç»Ÿè®¡
 http://quotes.money.163.com/trade/ddtj_300226.html#01b03
-2.·Ö¼Û±í
+2.åˆ†ä»·è¡¨
 http://quotes.money.163.com/trade/fjb_300226.html#01b04
-3.³É½»Ã÷Ï¸(¿ÉÒÔÏÂÔØ×î½ü5¸öÉÏÊĞÈÕµÄÊı¾İ)
+3.æˆäº¤æ˜ç»†(å¯ä»¥ä¸‹è½½æœ€è¿‘ä¸¤å‘¨çš„æ•°æ®)
 http://quotes.money.163.com/trade/cjmx_300226.html#01b05
-Ö±½ÓÏÂÔØµØÖ·:
+ç›´æ¥ä¸‹è½½åœ°å€:
 http://quotes.money.163.com/cjmx/2013/20131028/1300226.xls
 
-4.ÀúÊ·½»Ò×Êı¾İ
+4.å†å²äº¤æ˜“æ•°æ®
 http://quotes.money.163.com/trade/lsjysj_300226.html#01b07
-Ö±½ÓÏÂÔØ(Çø±ğÉÏÖ¤ºÍÉîÛÚµÄµØÖ·):
+ç›´æ¥ä¸‹è½½(åŒºåˆ«ä¸Šè¯å’Œæ·±åœ³çš„åœ°å€):
 http://quotes.money.163.com/service/chddata.html?code=1300226&start=20110530&end=20131103&fields=TCLOSE;HIGH;LOW;TOPEN;LCLOSE;CHG;PCHG;TURNOVER;VOTURNOVER;VATURNOVER;TCAP;MCAP
 
-5.ÀúÊ·×Ê½ğÁ÷Ïò(¹¹ÔìÁ´½Ó£¬¿ÉÒÔÏÂÔØµ½2012Äê9ÔÂ18ÈÕµÄÊı¾İ)
+5.å†å²èµ„é‡‘æµå‘(æ„é€ é“¾æ¥ï¼Œå¯ä»¥ä¸‹è½½åˆ°2012å¹´9æœˆ18æ—¥çš„æ•°æ®ï¼Œçº¦250å¤©çš„æ•°æ®)
 http://quotes.money.163.com/trade/lszjlx_300226.html#01b08
-http://quotes.money.163.com/trade/lszjlx_300226,5.html
+http://quotes.money.163.com/trade/lszjlx_300226,250.html

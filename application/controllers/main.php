@@ -494,4 +494,74 @@ class Main extends MY_Controller {
 	{
 		$this->load->view('html');	
 	}
+
+	/**
+	 * 处理历史资金流向html，处理成csv文件格式。
+	 */
+	public function parseLszjlxHtml() 
+	{
+		$dir = APPPATH . "cache/data/lszjlx/sh";
+		$this->load->library('smiplehtml');
+		
+		if (($dh = opendir($dir)) == true) {
+			while (($file = readdir($dh)) !== false) {
+				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
+					$content = array();
+					$fileName = explode('.', $file);
+					$fileName = explode('_', $file);
+					$code = $fileName[0];
+					$filePath =  $dir."/".$file;
+					
+					$html = $this->smiplehtml->file_get_html($filePath);
+					$items = $html->find('table.table_bg001 tr');
+
+					//file_put_contents('ijibu.php', $items);exit;
+					
+					if (!$items) {
+						continue;
+					}
+
+					foreach ($items as $key => $item) {
+						if ($key == 0) {
+							continue;
+						}
+						$var1 = $item->find('td', 0)->plaintext;	//日期
+						$var2 = $item->find('td', 1)->firstChild()->plaintext;	//收盘价：
+						$var3 = $item->find('td', 2)->firstChild()->plaintext;	//涨跌幅：需要转换百分比
+						$var4 = $item->find('td', 3)->plaintext;	//换手率：需要转换百分比
+						$var5 = $item->find('td', 4)->plaintext;	//资金流入（万元）：需要转换格式
+						$var6 = $item->find('td', 5)->plaintext;	//资金流出（万元）
+						$var7 = $item->find('td', 6)->firstChild()->plaintext;	//净流入（万元）
+						$var8 = $item->find('td', 7)->plaintext;	//主力流入（万元）：
+						$var9 = $item->find('td', 8)->plaintext;	//主力流出（万元）
+						$var10 = $item->find('td', 9)->firstChild()->plaintext;	//主力净流入（万元）
+
+						$var3 = str_replace('%', '', $var3);
+						$var4 = str_replace('%', '', $var4);
+						$var5 = str_replace(',', '', $var5);
+						$var6 = str_replace(',', '', $var6);
+						$var7 = str_replace(',', '', $var7);
+						$var8 = str_replace(',', '', $var8);
+						$var9 = str_replace(',', '', $var9);
+						$var10 = str_replace(',', '', $var10);
+							
+						$content[$var1] = "'$code', '$var1', $var2, $var3, $var4, $var5, $var6, $var7, $var8, $var9, $var10";
+						//$this->db->query($sql);
+						unset($item);
+					}
+					
+					unset($items);
+					$html->clear();unset($html);
+					
+					$content = implode("\r\n", $content);
+					//echo $content;
+
+					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertLszjlxInfo.log');
+					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertLszjlxInfo.sql');
+				}
+			}
+			closedir($dh);
+		}
+		echo 'scuess!';
+	}
 }
