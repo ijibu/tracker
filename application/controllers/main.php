@@ -500,7 +500,7 @@ class Main extends MY_Controller {
 	 */
 	public function parseLszjlxHtml() 
 	{
-		$dir = APPPATH . "cache/data/lszjlx/sh";
+		$dir = APPPATH . "cache/data/163/lszjlx/sz/20131101";
 		$this->load->library('smiplehtml');
 		
 		if (($dh = opendir($dir)) == true) {
@@ -556,12 +556,110 @@ class Main extends MY_Controller {
 					$content = implode("\r\n", $content);
 					//echo $content;
 
-					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertLszjlxInfo.log');
-					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertLszjlxInfo.sql');
+					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertSzLszjlxInfo.log');
+					error_log($content . "\r\n", 3, APPPATH . 'cache/sql/insertSzLszjlxInfo.sql');
 				}
 			}
 			closedir($dh);
 		}
 		echo 'scuess!';
+	}
+
+	//http://stackoverflow.com/questions/10498632/converting-html-table-to-a-csv-automatically-using-php
+	public function parseLszjlx() 
+	{
+		$dir = APPPATH . "cache/data/163/lszjlx/sz/error";
+		$dsAllowStrings = array(',', '%');		//简单过滤掉单引号，双引号
+		
+		if (($dh = opendir($dir)) == true) {
+			while (($file = readdir($dh)) !== false) {
+				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
+					$fileName = explode('.', $file);
+					$fileName = explode('_', $file);
+					$code = $fileName[0];
+					$filePath =  $dir."/".$file;
+					$outPutFile =  $dir."/csv/".$code.".csv";
+
+					$table = file_get_contents($filePath);
+					$csv = array();
+					preg_match('/<div class="inner_box">
+    <table(>| [^>]*>)(.*?)<\/table( |>)/is',$table,$b);
+					if (!isset($b[2])) {
+						error_log($file . "\r\n", 3, APPPATH . 'cache/sql/parseLszjlxErroe.log');
+					} else {
+						$table = $b[2];
+						preg_match_all('/<tr(>| [^>]*>)(.*?)<\/tr( |>)/is',$table,$b);
+						$rows = $b[2];
+						foreach ($rows as $row) {
+						    //cycle through each row
+						    if(preg_match('/<th(>| [^>]*>)(.*?)<\/th( |>)/is',$row) && !file_exists($outPutFile)) {
+						        //match for table headers
+						        preg_match_all('/<th(>| [^>]*>)(.*?)<\/th( |>)/is',$row,$b);
+						        $csv[] = strip_tags(implode(',',$b[2]));
+						    } elseif(preg_match('/<td(>| [^>]*>)(.*?)<\/td( |>)/is',$row)) {
+						        //match for table cells
+						        preg_match_all('/<td(>| [^>]*>)(.*?)<\/td( |>)/is',$row,$b);
+						        $items = $b[2];
+						        foreach ($items as $key => $value) {
+						        	$items[$key] = trim(str_replace($dsAllowStrings, "", strip_tags($value)));
+						        }
+
+						        //var_dump($items);exit;
+								$csv[] = str_replace("\r\n", "", strip_tags(implode(',',$items)));
+						    }
+						}
+						$csv = implode("\n", $csv);
+						//var_dump($csv);
+						file_put_contents($outPutFile, $csv."\n", FILE_APPEND);
+					}
+				}
+			}
+			closedir($dh);
+		}
+		echo 'scuess!';
+	}
+
+	/**
+	 * 排序历史资金流向csv文件，按照日期排序。
+	 */
+	public function orderLszjlxCsvFile() 
+	{
+		$dir = APPPATH . "cache/data/163/lszjlx/sz/csv";
+		
+		if (($dh = opendir($dir)) == true) {
+			while (($file = readdir($dh)) !== false) {
+				if(!is_dir($dir."/".$file) && $file!="." && $file!="..") {
+					$filePath =  $dir."/".$file;
+
+					$contents = file_get_contents($filePath);
+					$contents = explode("\n", $contents);
+					$header = array_shift($contents);
+					$csv = array('3000-01-01' => $header);		//让header始终排序在前面。
+
+					foreach ($contents as $value) {
+						$row = array();
+						$row = explode(',', $value);
+						if ($row[0]) {
+							$csv[$row['0']] = $value;
+						}
+					}
+					krsort($csv);
+					//print_r($csv);exit;
+					$csv = implode("\n", $csv);
+					//var_dump($csv);
+					file_put_contents($filePath, $csv."\n");
+				}
+			}
+			closedir($dh);
+		}
+		echo 'scuess!';
+	}
+
+	/**
+	 * 批量处理文件编码
+	 */
+	public function iconv_files() 
+	{
+		iconv_file(APPPATH . 'cache/data/163/cjmx/sh/20131105');
 	}
 }
