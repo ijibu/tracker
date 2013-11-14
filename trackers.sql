@@ -89,3 +89,20 @@ UPDATE `transaction_log` SET `dateTime`=unix_timestamp(`dateTime`) WHERE 1;
 ALTER TABLE `transaction_log` CHANGE `dateTime` `dateTime` INT( 11 ) NOT NULL COMMENT '日期';
 
 ALTER TABLE `transaction_log` ADD INDEX ( `stockCode` ) ;
+
+CREATE TABLE IF NOT EXISTS `lszjlx` (
+  `id` int(11) NOT NULL auto_increment,
+  `stockCode` char(6) NOT NULL COMMENT '股票代码',
+  `dateTime` int(11) NOT NULL,
+  `closePrice` decimal(7,2) NOT NULL COMMENT '收盘价',
+  `changePrice` decimal(7,2) NOT NULL COMMENT '涨跌幅',
+  `percentChg` decimal(4,2) NOT NULL COMMENT '换手率',
+  `income` int(10) NOT NULL COMMENT '资金流入（万元）',
+  `expenditure` int(10) NOT NULL COMMENT '资金流出（万元）',
+  `netIncome` int(10) NOT NULL COMMENT '净资金流入（万元）',
+  `mainIncome` int(10) NOT NULL COMMENT '主力资金流入（万元）',
+  `mainExpenditure` int(10) NOT NULL COMMENT '主力资金流出（万元）',
+  `netMainIncome` int(10) NOT NULL COMMENT '净主力资金流入（万元）',
+  PRIMARY KEY  (`id`),
+  KEY `stockCode` (`stockCode`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='股票历史资金流向表';
